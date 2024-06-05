@@ -1,0 +1,25 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Style Sheet Switcher</title>
+    <link rel="stylesheet" type="text/css" href="./style-sheet-switcher.css">
+    <link id="styleSerif" rel="alternate stylesheet" type="text/css" href="./style-sheet-switcher-serif.css" title="Serif Text">
+    <link id="styleInverted" rel="alternate stylesheet" type="text/css" href="./style-sheet-switcher-inverted.css" title="Inverted Color Scheme">
+</head>
+<body>
+    <h1 id="heading" style="color: #FFFFFF; background-color: #000000;">Race Results</h1>
+    <p>Paragraph 1</p>
+    <p>Paragraph 2</p>
+    <p>Paragraph 3</p>
+
+    <div>
+        <button onclick="switchStyle('default')">Default Style</button>
+        <button onclick="switchStyle('Serif Text')">Serif Text</button>
+        <button onclick="switchStyle('Inverted Color Scheme')">Inverted Color Scheme</button>
+    </div>
+
+    <script src="style-sheet-switcher.js"></script>
+</body>
+</html>
